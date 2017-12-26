@@ -1,3 +1,16 @@
+#Files
+*.strict
+*.gz
+*.csv
+Amazon product data
+
+# Compiled python
+*.pyc
+
+
+# IPython notebook checkpoints
+.ipynb_checkpoints
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

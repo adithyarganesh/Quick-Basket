@@ -1,0 +1,25 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Test</title>
+</head>
+    <body>
+        <input id="textinputID" type="text" name="textinput">
+        <script type="text/javascript">
+            function sendMessage() {
+                $.ajax({
+                    method: 'POST',
+                    url: "http://localhost:5000/script",
+                    data: {'data': document.getElementById('textinputID').value},
+                    success: function(response) {
+                        console.log(response)
+                    },
+                    error: function(response) {
+                        console.error(response)
+                    }
+                });
+            }
+        </script>
+        <button onclick="sendMessage()">Send</button>
+    </body>
+</html>

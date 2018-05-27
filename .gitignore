@@ -3,7 +3,7 @@
 *.gz
 *.csv
 Amazon product data
-
+Reports
 # Compiled python
 *.pyc
 
